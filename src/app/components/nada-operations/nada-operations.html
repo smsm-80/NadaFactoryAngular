@@ -1,0 +1,34 @@
+<div class="operations-container">
+  <!-- Header Section -->
+  <div class="header-section">
+    <div class="header-decoration"></div>
+    <h1 class="main-title">عملياتنا</h1>
+    <h2 class="main-subtitle">وتقنياتنا</h2>
+    <p class="description">نستخدم سلسلة متكاملة من التقنيات الحديثة تشمل:</p>
+  </div>
+
+  <!-- Operations Grid -->
+  <div class="operations-grid">
+    <div class="operation-card" *ngFor="let operation of operationsData; let i = index">
+      <div class="card-content">
+        <div class="operation-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g [innerHTML]="getIcon(operation.icon)"></g>
+          </svg>
+        </div>
+        
+        <div class="operation-text">
+          <h3 class="operation-title">{{ operation.title }}</h3>
+          <p class="operation-subtitle">{{ operation.subtitle }}</p>
+        </div>
+      </div>
+      
+      <div class="card-number">{{ i + 1 }}</div>
+    </div>
+  </div>
+
+  <!-- Background Pattern -->
+  <div class="background-pattern">
+    <div class="pattern-line" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></div>
+  </div>
+</div>

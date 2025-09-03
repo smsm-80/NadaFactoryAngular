@@ -1,0 +1,29 @@
+<section class="future-plans">
+  <div class="container">
+    <div class="content-wrapper">
+      <!-- Image Content -->
+      <div class="image-content">
+        <div class="image-container">
+          <img src="assets/images/future-plans.jpg" 
+               alt="{{ plansData.imageAlt }}" 
+               class="main-image">
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      
+      <!-- Text Content -->
+      <div class="text-content">
+        <div class="content-card">
+          <h2 class="main-title">{{ plansData.title }}</h2>
+          
+          <div class="plans-list">
+            <div class="plan-item" *ngFor="let plan of plansData.plans; let i = index">
+              <div class="plan-icon">{{ plan.icon }}</div>
+              <p class="plan-title">{{ plan.title }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

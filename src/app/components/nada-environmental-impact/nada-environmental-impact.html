@@ -1,0 +1,40 @@
+<section class="environmental-impact">
+  <div class="container">
+    <div class="content-wrapper">
+      <!-- Images Section -->
+      <div class="images-section">
+        <div class="image-grid">
+          <div class="image-item large-image">
+            <img src="assets/images/impact2.jpg"
+                 alt="{{ impactData.images[0].alt }}" 
+                 class="impact-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="image-item large-image">
+            <img src="assets/images/impact1.jpg"
+                 alt="{{ impactData.images[1].alt }}" 
+                 class="impact-image">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content Section -->
+      <div class="content-section">
+        <div class="content-card">
+          <h2 class="main-title">{{ impactData.title }}</h2>
+          
+          <div class="impacts-list">
+            <div class="impact-item" *ngFor="let impact of impactData.impacts; let i = index">
+              <div class="impact-header">
+                <div class="impact-icon">{{ impact.icon }}</div>
+                <h3 class="impact-title">{{ impact.title }}</h3>
+              </div>
+              <p class="impact-description">{{ impact.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

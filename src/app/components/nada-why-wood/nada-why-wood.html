@@ -1,0 +1,31 @@
+<section class="why-wood">
+  <div class="container">
+    <div class="content-wrapper">
+      <!-- Text Content -->
+      <div class="text-content">
+        <div class="content-card">
+          <h2 class="main-title">{{ woodData.title }}</h2>
+          
+          <div class="features-list">
+            <div class="feature-item" *ngFor="let feature of woodData.features">
+              <div class="feature-icon">{{ feature.icon }}</div>
+              <div class="feature-content">
+                <h3 class="feature-title">{{ feature.title }}</h3>
+                <p class="feature-subtitle">{{ feature.subtitle }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Image Content -->
+      <div class="image-content">
+        <div class="image-container">
+          <img src="assets/images/why-nada.jpg" 
+               alt="{{ woodData.imageAlt }}" 
+               class="main-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

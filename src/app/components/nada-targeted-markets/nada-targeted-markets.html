@@ -1,0 +1,28 @@
+<section class="targeted-markets">
+  <div class="container">
+    <div class="content-wrapper">
+      <!-- Text Content -->
+      <div class="text-content">
+        <h2 class="main-title">{{ marketData.title }}</h2>
+        
+        <div class="markets-list">
+          <div class="market-item" *ngFor="let market of marketData.markets">
+            <div class="market-icon">{{ market.icon }}</div>
+            <div class="market-content">
+              <h3 class="market-title">{{ market.title }}</h3>
+              <p class="market-description">{{ market.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Image Content -->
+      <div class="image-content">
+        <div class="image-container">
+          <img src="assets/images/markets.jpg" alt="مزارع في الإسطبل مع القش" class="main-image">
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

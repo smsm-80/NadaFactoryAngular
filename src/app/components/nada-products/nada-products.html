@@ -1,0 +1,30 @@
+<div class="products-container">
+  <!-- Background image -->
+  <div class="background-image">
+    <img src="assets/images/products.jpg" alt="Woodworking Background" class="bg-img">
+    <div class="overlay"></div>
+  </div>
+  
+  <!-- Content -->
+  <div class="content-wrapper">
+    <!-- Header section -->
+    <div class="header-section">
+      <h1 class="main-title">منتجاتنا</h1>
+      <p class="subtitle">تحويل المخلفات إلى موارد قيمة:</p>
+    </div>
+    
+    <!-- Products list -->
+    <div class="products-list">
+      <div class="product-item" *ngFor="let product of products">
+        <div class="product-icon">
+          <!-- Wood grain icon for all products -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/>
+            <path d="m19 9-5 5-4-4-3 3"/>
+          </svg>
+        </div>
+        <span class="product-name">{{ product.name }}</span>
+      </div>
+    </div>
+  </div>
+</div>
