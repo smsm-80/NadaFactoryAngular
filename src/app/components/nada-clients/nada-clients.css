@@ -1,11 +1,11 @@
-/* .clients-container {
-  background: linear-gradient(135deg, #f5f1e8 0%, #ede4d3 100%);
+.clients-container {
+background: linear-gradient(135deg, #f8f6f0 0%, #e8e2d4 100%);
   min-height: 100vh;
   font-family: 'Arial', 'Tahoma', sans-serif;
   direction: rtl;
   position: relative;
   overflow: hidden;
-  padding: 60px 20px;
+   padding-top: 30px;
 }
 
 .background-pattern {
@@ -197,4 +197,4 @@
   .client-subtitle {
     font-size: 1rem;
   }
-} */
+}

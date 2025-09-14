@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, p, li, a, span, div, .intro-card, .company-name-arabic {
+  font-family: 'Cairo', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Exclude headlines from global font-size and line-height */
+h1, h2, h3, h4, h5, h6,
+.company-name,
+.section-title {
+  /* Keep their own font-size and line-height */
+}

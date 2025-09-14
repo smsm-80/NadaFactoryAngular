@@ -1,4 +1,4 @@
-/* .message-container {
+.message-container {
   display: flex;
   width: 100%;
   max-width: 100%;
@@ -92,4 +92,4 @@
   .text-section {
     padding: 30px 15px;
   }
-} */
+}

@@ -1,9 +1,10 @@
-/* .products-container {
+.products-container {
   position: relative;
   min-height: 600px;
   overflow: hidden;
   font-family: 'Arial', 'Tahoma', sans-serif;
   direction: rtl;
+   padding-top: 30px;
 }
 
 .background-image {
@@ -168,4 +169,4 @@
   .content-wrapper {
     padding: 30px 15px;
   }
-} */
+}

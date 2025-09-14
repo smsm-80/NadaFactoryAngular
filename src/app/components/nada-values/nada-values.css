@@ -1,6 +1,6 @@
-/* .values-container {
+.values-container {
   background: linear-gradient(135deg, #f5f1e8 0%, #ede4d3 100%);
-  padding: 80px 20px 60px;
+   padding-top: 30px;
   font-family: 'Arial', 'Tahoma', sans-serif;
   direction: rtl;
 }
@@ -139,4 +139,4 @@
   .values-container {
     padding: 40px 15px 30px;
   }
-} */
+}

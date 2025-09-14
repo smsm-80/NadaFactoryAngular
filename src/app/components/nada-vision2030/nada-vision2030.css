@@ -1,5 +1,5 @@
-/* .vision-2030 {
-  padding: 0;
+.vision-2030 {
+  padding-top: 30px;
   background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc6 100%);
   min-height: 70vh;
 }
@@ -317,4 +317,4 @@
 
 .objective-item:hover::before {
   opacity: 1;
-} */
+}
