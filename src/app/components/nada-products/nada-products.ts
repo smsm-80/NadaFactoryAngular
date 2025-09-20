@@ -12,7 +12,7 @@ export class NadaProducts {
   
   products = [
     {
-      name: 'نشارة حضارة الودائن',
+      name: 'نشارة حضارة الدواجن',
       icon: 'sawdust'
     },
     {
@@ -20,7 +20,7 @@ export class NadaProducts {
       icon: 'horse-stable'
     },
     {
-      name: 'كسار احتساب مضمار السباق',
+      name: 'كسار اخشاب مضمار السباق',
       icon: 'track-chips'
     },
     {
@@ -36,7 +36,7 @@ export class NadaProducts {
       icon: 'mdf-boards'
     },
     {
-      name: 'اعلاف حيوانات مركبة',
+      name: 'اعلاف حيوانية مركبة',
       icon: 'animal-feed'
     }
   ];

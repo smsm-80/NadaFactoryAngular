@@ -18,14 +18,14 @@ export class NadaContactUs {
       {
         icon: '📧',
         title: 'البريد الإلكتروني',
-        value: 'info@nadawood.com',
-        link: 'mailto:info@nadawood.com'
+        value: 'info@nadafactory.sa',
+        link: 'dmail:info@nadafactory.sa'
       },
       {
         icon: '📱',
         title: 'رقم الهاتف',
-        value: '+966 11 234 5678',
-        link: 'tel:+966112345678'
+        value: '+966 54 787 7778',
+        link: 'tel:+966547877778'
       },
       {
         icon: '📍',

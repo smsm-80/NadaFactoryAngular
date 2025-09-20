@@ -1,0 +1,99 @@
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(244, 245, 244, 0.95);
+  color: #2c3e50;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  direction: rtl; 
+}
+
+.nav-container {
+max-width: 100%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right:10px;
+padding-left: 10px;
+}
+
+.brand-logo {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.3rem 0;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6B8E23, #8FBC8F);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0; /* left side for RTL */
+    background: rgba(244, 245, 244, 0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+}

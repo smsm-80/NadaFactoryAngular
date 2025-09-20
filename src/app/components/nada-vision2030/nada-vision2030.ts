@@ -25,7 +25,7 @@ export class NadaVision2030 {
       {
         icon: '🎯',
         title: 'وطن طموح',
-        description: 'يؤمن بالنجح للقطاع الخاص في تحقيق التنمية المستدامة'
+        description: 'نموذج ناجح للقطاع الخاص في تحقيق التنمية المستدامة'
       }
     ],
     imageSrc: 'tree-stump-green-plant.jpg',

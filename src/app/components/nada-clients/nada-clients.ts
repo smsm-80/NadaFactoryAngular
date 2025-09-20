@@ -13,22 +13,22 @@ export class NadaClients {
   clients = [
     {
       name: 'محجر نادي',
-      subtitle: 'سيافات الخيل'
+      subtitle: 'سباقات الخيل'
     },
     {
       name: 'مستشفى نادي',
       subtitle: 'سباقات الخيل'
     },
     {
-      name: 'شركة جوادين',
+      name: 'شركة دواجن',
       subtitle: 'الوطنية'
     },
     {
-      name: 'شركة جوادين',
-      subtitle: 'الرحبة'
+      name: 'شركة دواجن',
+      subtitle: 'الرمحية'
     },
     {
-      name: 'شركة جوادين',
+      name: 'شركة دواجن',
       subtitle: 'التنمية'
     }
   ];

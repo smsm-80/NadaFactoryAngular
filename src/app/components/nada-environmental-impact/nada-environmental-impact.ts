@@ -15,7 +15,7 @@ export class NadaEnvironmentalImpact {
       {
         icon: '🌱',
         title: 'دعم الاقتصاد الدائري',
-        description: 'تحويل النفايات إلى موارد ذات قيمة اقتصادية وبيئية'
+        description: 'تحويل النفايات إلى موارد يعزز الكفاءة الاقتصادية وبيئية'
       },
       {
         icon: '📉',
@@ -25,7 +25,7 @@ export class NadaEnvironmentalImpact {
       {
         icon: '💼',
         title: 'فرص وظيفية',
-        description: 'توظيف وتأهيل الكوادر السعودية في قطاع الصناعات التجارية الخضراء'
+        description: 'توظيف وتأهيل الكوادر السعودية في قطاع الصناعات التحويلية الخضراء'
       }
     ],
     images: [

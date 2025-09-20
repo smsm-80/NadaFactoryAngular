@@ -17,12 +17,13 @@ import { NadaVision2030 } from './components/nada-vision2030/nada-vision2030';
 import { NadaFuturePlans } from './components/nada-future-plans/nada-future-plans';
 import { NadaWhyWood } from './components/nada-why-wood/nada-why-wood';
 import { NadaContactUs } from './components/nada-contact-us/nada-contact-us';
+import { NadaNavbar } from './components/nada-navbar/nada-navbar';
 @Component({
   selector: 'app-root',
   imports: [NadaHero,NadaIntro,NadaAbout,NadaVision,NadaMessage,
     NadaValues,NadaProducts,NadaDetails,NadaOperations,NadaClients,
     NadaTargetedMarkets,NadaEnvironmentalImpact,CommonModule,NadaVision2030
-  , NadaFuturePlans,NadaWhyWood,NadaContactUs],
+  , NadaFuturePlans,NadaWhyWood,NadaContactUs,NadaNavbar],
     // imports: [RouterOutlet, NadaHero],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
