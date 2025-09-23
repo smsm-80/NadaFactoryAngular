@@ -1,11 +1,12 @@
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { ContactService } from '../../service/contact.service';
 
 @Component({
   selector: 'app-nada-contact-us',
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './nada-contact-us.html',
   styleUrl: './nada-contact-us.css'
 })
@@ -19,7 +20,7 @@ export class NadaContactUs {
         icon: '📧',
         title: 'البريد الإلكتروني',
         value: 'info@nadafactory.sa',
-        link: 'dmail:info@nadafactory.sa'
+        link: 'mailto:info@nadafactory.sa'
       },
       {
         icon: '📱',
@@ -58,13 +59,45 @@ export class NadaContactUs {
     message: ''
   };
 
-  constructor() { }
+  isLoading = false;
+  submitMessage = '';
+  messageType: 'success' | 'error' | '' = '';
+
+  constructor(private contactService: ContactService) { }
 
   onSubmit() {
+    if (this.isLoading) return;
+
+    this.isLoading = true;
+    this.submitMessage = '';
+    this.messageType = '';
+
     console.log('Form submitted:', this.formData);
-    // Add your form submission logic here
-    alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');
-    this.resetForm();
+
+    this.contactService.sendContactForm(this.formData).subscribe({
+      next: (response) => {
+        this.isLoading = false;
+        this.messageType = 'success';
+        this.submitMessage = 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.';
+        
+        console.log('API Response:', response);
+        this.resetForm();
+      },
+      error: (error) => {
+        this.isLoading = false;
+        this.messageType = 'error';
+        
+        if (error.status === 401) {
+          this.submitMessage = 'خطأ في المصادقة. يرجى المحاولة مرة أخرى.';
+        } else if (error.status === 400) {
+          this.submitMessage = 'بيانات غير مكتملة. يرجى ملء جميع الحقول المطلوبة.';
+        } else {
+          this.submitMessage = 'حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.';
+        }
+        
+        console.error('API Error:', error);
+      }
+    });
   }
 
   resetForm() {
@@ -76,5 +109,4 @@ export class NadaContactUs {
       message: ''
     };
   }
-
 }

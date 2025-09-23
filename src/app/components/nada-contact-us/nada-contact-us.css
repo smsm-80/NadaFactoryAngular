@@ -430,3 +430,43 @@
 .contact-item:nth-child(2) { animation-delay: 0.7s; }
 .contact-item:nth-child(3) { animation-delay: 0.8s; }
 .contact-item:nth-child(4) { animation-delay: 0.9s; }
+
+
+/* الأساس */
+.alert {
+  margin-top: 1rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* نجاح */
+.alert-success {
+  background-color: #e6f9ed;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+/* خطأ */
+.alert-danger {
+  background-color: #fdecea;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+/* حركة لطيفة */
+.alert {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInDown 0.4s forwards;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
