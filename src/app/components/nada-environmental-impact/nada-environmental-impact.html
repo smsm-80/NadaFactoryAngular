@@ -22,15 +22,15 @@
       <!-- Content Section -->
       <div class="content-section">
         <div class="content-card">
-          <h2 class="main-title">{{ impactData.title }}</h2>
+          <h2 class="main-title">{{ getTranslation('nada-environmental-impact.title') || impactData.title }}</h2>
           
           <div class="impacts-list">
             <div class="impact-item" *ngFor="let impact of impactData.impacts; let i = index">
               <div class="impact-header">
                 <div class="impact-icon">{{ impact.icon }}</div>
-                <h3 class="impact-title">{{ impact.title }}</h3>
+                <h3 class="impact-title">{{ getTranslation('nada-environmental-impact.impacts.' + i + '.title') || impact.title }}</h3>
               </div>
-              <p class="impact-description">{{ impact.description }}</p>
+              <p class="impact-description">{{ getTranslation('nada-environmental-impact.impacts.' + i + '.description') || impact.description }}</p>
             </div>
           </div>
         </div>

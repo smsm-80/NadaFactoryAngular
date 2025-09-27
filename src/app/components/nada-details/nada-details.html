@@ -3,7 +3,7 @@
   <div class="content-wrapper">
     <!-- Left section with product cards -->
     <div class="products-section">
-      <div class="product-card" *ngFor="let product of productDetails">
+    <div class="product-card" *ngFor="let product of productDetails; let i = index">
         <!-- Product icon -->
         <div class="product-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -12,14 +12,14 @@
           </svg>
         </div>
         
-        <!-- Product title -->
-        <h3 class="product-title">{{ product.title }}</h3>
+  <!-- Product title -->
+  <h3 class="product-title">{{ getTranslation('nada-details.products.' + i + '.title') || product.title }}</h3>
         
         <!-- Product details -->
         <div class="product-details">
-          <p *ngIf="product.size" class="detail-item">{{ product.size }}</p>
-          <p *ngIf="product.moisture" class="detail-item">{{ product.moisture }}</p>
-          <p class="detail-item benefits">{{ product.benefits }}</p>
+          <p *ngIf="product.size" class="detail-item">{{ getTranslation('nada-details.products.' + i + '.size') || product.size }}</p>
+          <p *ngIf="product.moisture" class="detail-item">{{ getTranslation('nada-details.products.' + i + '.moisture') || product.moisture }}</p>
+          <p class="detail-item benefits">{{ getTranslation('nada-details.products.' + i + '.benefits') || product.benefits }}</p>
         </div>
       </div>
     </div>

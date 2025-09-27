@@ -5,7 +5,7 @@
       <div class="image-content">
         <div class="image-container">
           <img src="assets/images/future-plans.jpg" 
-               alt="{{ plansData.imageAlt }}" 
+               alt="{{ getTranslation('nada-future-plans.imageAlt') || plansData.imageAlt }}" 
                class="main-image">
           <div class="image-overlay"></div>
         </div>
@@ -14,12 +14,16 @@
       <!-- Text Content -->
       <div class="text-content">
         <div class="content-card">
-          <h2 class="main-title">{{ plansData.title }}</h2>
+          <h2 class="main-title">
+            {{ getTranslation('nada-future-plans.title') || plansData.title }}
+          </h2>
           
           <div class="plans-list">
             <div class="plan-item" *ngFor="let plan of plansData.plans; let i = index">
               <div class="plan-icon">{{ plan.icon }}</div>
-              <p class="plan-title">{{ plan.title }}</p>
+              <p class="plan-title">
+                {{ getPlanTitle(i) || plan.title }}
+              </p>
             </div>
           </div>
         </div>

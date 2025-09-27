@@ -1,15 +1,15 @@
 <div class="clients-container">
   <!-- Header Section -->
-  <div class="header-section">
+    <div class="header-section">
     <div class="header-decoration"></div>
-    <h1 class="main-title">العملاء</h1>
+    <h1 class="main-title">{{ getTranslation('nada-clients.title') || 'العملاء' }}</h1>
   </div>
 
   <!-- Clients Grid -->
   <div class="clients-grid">
-    <div class="client-card" *ngFor="let client of clients">
-      <h3 class="client-name">{{ client.name }}</h3>
-      <p class="client-subtitle">{{ client.subtitle }}</p>
+    <div class="client-card" *ngFor="let client of clients; let i = index">
+      <h3 class="client-name">{{ getTranslation('nada-clients.clients.' + i + '.name') || client.name }}</h3>
+      <p class="client-subtitle">{{ getTranslation('nada-clients.clients.' + i + '.subtitle') || client.subtitle }}</p>
     </div>
   </div>
 

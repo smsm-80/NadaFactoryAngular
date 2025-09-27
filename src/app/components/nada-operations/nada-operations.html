@@ -2,9 +2,9 @@
   <!-- Header Section -->
   <div class="header-section">
     <div class="header-decoration"></div>
-    <h1 class="main-title">عملياتنا</h1>
-    <h2 class="main-subtitle">وتقنياتنا</h2>
-    <p class="description">نستخدم سلسلة متكاملة من التقنيات الحديثة تشمل:</p>
+  <h1 class="main-title">{{ getTranslation('nada-operations.title') || 'عملياتنا' }}</h1>
+  <h2 class="main-subtitle">{{ getTranslation('nada-operations.subtitle') || 'وتقنياتنا' }}</h2>
+  <p class="description">{{ getTranslation('nada-operations.description') || 'نستخدم سلسلة متكاملة من التقنيات الحديثة تشمل:' }}</p>
   </div>
 
   <!-- Operations Grid -->
@@ -18,8 +18,8 @@
         </div>
         
         <div class="operation-text">
-          <h3 class="operation-title">{{ operation.title }}</h3>
-          <p class="operation-subtitle">{{ operation.subtitle }}</p>
+          <h3 class="operation-title">{{ getTranslation('nada-operations.operations.' + i + '.title') || operation.title }}</h3>
+          <p class="operation-subtitle">{{ getTranslation('nada-operations.operations.' + i + '.subtitle') || operation.subtitle }}</p>
         </div>
       </div>
       

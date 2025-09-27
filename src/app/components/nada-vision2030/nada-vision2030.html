@@ -4,20 +4,26 @@
       <!-- Text Content -->
       <div class="text-content">
         <div class="content-card">
-          <h2 class="main-title">{{ visionData.title }}</h2>
-          
+          <h2 class="main-title">
+            {{ getTranslation('nada-vision2030.title') || visionData.title }}
+          </h2>
+
           <div class="objectives-list">
-            <div class="objective-item" *ngFor="let objective of visionData.objectives">
+            <div class="objective-item" *ngFor="let objective of getObjectives()">
               <div class="objective-header">
-                <div class="objective-icon">{{ objective.icon }}</div>
-                <h3 class="objective-title">{{ objective.title }}</h3>
+                <div class="objective-icon">{{ objective.icon || '🌱' }}</div>
+                <h3 class="objective-title">
+                  {{ objective.title }}
+                </h3>
               </div>
-              <p class="objective-description">{{ objective.description }}</p>
+              <p class="objective-description">
+                {{ objective.description }}
+              </p>
             </div>
           </div>
         </div>
       </div>
-      
+
       <!-- Image Content -->
       <div class="image-content">
         <div class="image-container">

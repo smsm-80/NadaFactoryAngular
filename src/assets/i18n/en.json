@@ -2,7 +2,7 @@
   "nada-navbar": {
     "brandAlt": "Nada Factory Logo",
     "links": {
-      "intro": "Intro",
+      "intro": "Home",
       "about": "About",
       "factory": "About the Factory",
       "products": "Our Products",
@@ -173,21 +173,29 @@
       { "name": "Dawgan Company", "subtitle": "Finishing" }
     ]
   },
-  "nada-future-plans": {
-    "title": "Strategic Development Plans",
-    "plans": [
-      "Establishing fiber product lines from agricultural waste",
-      "Sustainable manufacturing programs with partners and investors",
-      "Upgrading production capacity to meet growing demand",
-      "Obtaining FSC and ISO 14001 certifications to enhance environmental and quality management",
-      "Advanced manufacturing technologies"
-    ]
-  },
+"nada-future-plans": {
+  "title": "Strategic Development Plans",
+  "plans": [
+    "Establishing fiber product lines from agricultural waste",
+    "Sustainable manufacturing programs with partners and investors",
+    "Upgrading production capacity to meet growing demand",
+    "Obtaining FSC and ISO 14001 certifications to enhance environmental and quality management",
+    "Advanced manufacturing technologies"
+  ]
+},
   "nada-message": {
     "title": "Our Message",
     "description": "We bridge manufacturing and environmental responsibility to deliver safe products and support the 2030 sustainability vision.",
     "imagesAlt": ["Woodworking craftsmanship", "Wood drilling process"]
   },
+  "nada-intro": {
+  "title": "Introductory Overview",
+  "paragraphs": [
+    "At Nada Wood Factory, we consider every product we deliver to be more than just an industrial product. It is a comprehensive environmental and economic solution that enhances food security, reduces waste, and supports the goals of Saudi Vision 2030 in building a sustainable economy capable of addressing future environmental and industrial challenges.",
+    "Through recycling wood and green agricultural waste, the factory transforms these materials into value-added products such as poultry bedding, horse bedding, and fiber shavings derived from palm pruning residues.",
+    "Amid the significant advancements witnessed in the Kingdom of Saudi Arabia across industry and environmental fields, Nada Wood Factory stands out as a platform for advanced technologies that reduce reliance on non-renewable resources and foster sustainable environmental solutions."
+  ]
+},
   "nada-contact-us": {
     "title": "Contact Us",
     "subtitle": "We are here to support your inquiries and business requests",
@@ -207,6 +215,14 @@
       "badRequest": "Incomplete data. Please fill required fields.",
       "genericError": "An unexpected error occurred while sending. Please try again later."
     },
-    "loadingText": "Loading message..."
+    "loadingText": "Loading message...",
+    "contactInfo": [
+      { "icon": "📧", "title": "Email", "value": "info@nadafactory.sa", "link": "mailto:info@nadafactory.sa" },
+      { "icon": "📱", "title": "Phone", "value": "+966 54 787 7778", "link": "tel:+966547877778" },
+      { "icon": "📍", "title": "Address", "value": "Riyadh, Saudi Arabia", "link": null },
+      { "icon": "🕒", "title": "Working Hours", "value": "Sunday - Thursday: 8:00 AM - 5:00 PM", "link": null }
+    ]
+
   }
+
 }

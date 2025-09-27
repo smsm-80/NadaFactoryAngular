@@ -2,8 +2,8 @@
   <div class="container">
     <!-- Header Section -->
     <div class="header-section">
-      <h2 class="main-title">{{ contactData.title }}</h2>
-      <p class="subtitle">{{ contactData.subtitle }}</p>
+      <h2 class="main-title">{{ getTranslation('nada-contact-us.title') || contactData.title }}</h2>
+      <p class="subtitle">{{ getTranslation('nada-contact-us.subtitle') || contactData.subtitle }}</p>
         <div *ngIf="submitMessage" class="alert" 
           [ngClass]="{
             'alert-success': messageType === 'success',
@@ -12,59 +12,37 @@
         {{ submitMessage }}
       </div>
     </div>
-
     <div class="content-wrapper">
       <!-- Contact Information -->
       <div class="contact-info">
-        <h3 class="section-title">معلومات التواصل</h3>
+        <h3 class="section-title">{{ getTranslation('nada-contact-us.contactInfoTitle') || 'معلومات التواصل' }}</h3>
         
         <div class="contact-list">
-          <div class="contact-item" *ngFor="let contact of contactData.contactInfo">
-            <div class="contact-icon">{{ contact.icon }}</div>
-            <div class="contact-content">
-              <h4 class="contact-title">{{ contact.title }}</h4>
-              <a *ngIf="contact.link; else noLink" 
-                 [href]="contact.link" 
-                 class="contact-value clickable">{{ contact.value }}</a>
-              <ng-template #noLink>
-                <p class="contact-value">{{ contact.value }}</p>
-              </ng-template>
-            </div>
-          </div>
+      <div class="contact-item" *ngFor="let contact of getContactInfo()">
+        <div class="contact-icon">{{ contact.icon }}</div>
+        <div class="contact-content">
+          <h4 class="contact-title">{{ contact.title }}</h4>
+          <a *ngIf="contact.link; else noLink" [href]="contact.link" class="contact-value clickable">{{ contact.value }}</a>
+          <ng-template #noLink>
+            <p class="contact-value">{{ contact.value }}</p>
+          </ng-template>
+        </div>
+      </div>
+
+
+
         </div>
 
-        <!-- Social Media Links -->
-        <!-- <div class="social-media">
-          <h4 class="social-title">تابعنا على</h4>
-          <div class="social-links">
-            <a href="#" class="social-link">
-              <i class="social-icon">📘</i>
-              <span>فيسبوك</span>
-            </a>
-            <a href="#" class="social-link">
-              <i class="social-icon">📸</i>
-              <span>إنستغرام</span>
-            </a>
-            <a href="#" class="social-link">
-              <i class="social-icon">🐦</i>
-              <span>تويتر</span>
-            </a>
-            <a href="#" class="social-link">
-              <i class="social-icon">💼</i>
-              <span>لينكد إن</span>
-            </a>
-          </div>
-        </div> -->
       </div>
 <!-- Alert Message -->
 
       <!-- Contact Form -->
       <div class="contact-form">
-        <h3 class="section-title">أرسل لنا رسالة</h3>
+  <h3 class="section-title">{{ getTranslation('nada-contact-us.formTitle') || 'أرسل لنا رسالة' }}</h3>
         
         <form class="form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
           <div class="form-group">
-            <label class="form-label">{{ contactData.formFields.name }}</label>
+            <label class="form-label">{{ getTranslation('nada-contact-us.formFields.name') || contactData.formFields.name }}</label>
             <input type="text" 
                    class="form-input" 
                    [(ngModel)]="formData.name"
@@ -74,7 +52,7 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label">{{ contactData.formFields.email }}</label>
+              <label class="form-label">{{ getTranslation('nada-contact-us.formFields.email') || contactData.formFields.email }}</label>
               <input type="email" 
                      class="form-input" 
                      [(ngModel)]="formData.email"
@@ -82,7 +60,7 @@
                      required>
             </div>
             <div class="form-group">
-              <label class="form-label">{{ contactData.formFields.phone }}</label>
+              <label class="form-label">{{ getTranslation('nada-contact-us.formFields.phone') || contactData.formFields.phone }}</label>
               <input type="tel" 
                      class="form-input" 
                      [(ngModel)]="formData.phone"
@@ -91,7 +69,7 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label">{{ contactData.formFields.subject }}</label>
+            <label class="form-label">{{ getTranslation('nada-contact-us.formFields.subject') || contactData.formFields.subject }}</label>
             <input type="text" 
                    class="form-input" 
                    [(ngModel)]="formData.subject"
@@ -100,7 +78,7 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label">{{ contactData.formFields.message }}</label>
+            <label class="form-label">{{ getTranslation('nada-contact-us.formFields.message') || contactData.formFields.message }}</label>
             <textarea class="form-textarea" 
                       [(ngModel)]="formData.message"
                       name="message"
@@ -108,16 +86,18 @@
                       required></textarea>
           </div>
 
-          <button type="submit" 
-                  class="submit-btn"
-                  [disabled]="!contactForm.valid || isLoading">
-            <span *ngIf="!isLoading">{{ contactData.formFields.submit }}</span>
-            <span *ngIf="isLoading">جاري الإرسال...</span>
-          </button>
+      <button type="submit" 
+              class="submit-btn"
+              [disabled]="!contactForm.valid || isLoading">
+        <span *ngIf="!isLoading">
+          {{ getTranslation('nada-contact-us.formFields.submit') || contactData.formFields.submit }}
+        </span>
+        <span *ngIf="isLoading">
+          {{ getTranslation('nada-contact-us.loadingText') || 'جاري الإرسال...' }}
+        </span>
+      </button>
         </form>
       </div>
     </div>
   </div>
-
-
 </section>

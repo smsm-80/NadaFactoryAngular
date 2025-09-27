@@ -1,19 +1,25 @@
 <nav class="custom-navbar">
   <div class="nav-container">
         <a href="#intro" class="brand">
-      <img src="assets/images/nada-logo.png" alt="ندى للأخشاب" class="brand-logo">
+  <img src="assets/images/nada-logo.png" alt="{{ getTranslation('nada-navbar.brandAlt') }}" class="brand-logo">
     </a>
     <button class="menu-toggle" (click)="toggleMenu()">
       ☰
     </button>
 
+    <!-- Language toggle -->
+    <button class="lang-toggle" (click)="toggleLang()" title="Toggle language">
+      🌐
+      <span class="lang-code">{{ currentLang }}</span>
+    </button>
+
     <ul class="nav-links" [class.open]="isOpen">
-      <li><a href="#intro">الرئيسية</a></li>
-      <li><a href="#about">المقدمة</a></li>
-      <li><a href="#factory">عن المصنع</a></li>
-      <li><a href="#products">المنتجات</a></li>
-      <li><a href="#tech">التقنيات</a></li>
-      <li><a href="#contact">تواصل معنا</a></li>
+      <li><a href="#intro">{{ getTranslation('nada-navbar.links.intro') }}</a></li>
+      <li><a href="#about">{{ getTranslation('nada-navbar.links.about') }}</a></li>
+      <li><a href="#factory">{{ getTranslation('nada-navbar.links.factory') }}</a></li>
+      <li><a href="#products">{{ getTranslation('nada-navbar.links.products') }}</a></li>
+      <li><a href="#tech">{{ getTranslation('nada-navbar.links.tech') }}</a></li>
+      <li><a href="#contact">{{ getTranslation('nada-navbar.links.contact') }}</a></li>
     </ul>
 
 

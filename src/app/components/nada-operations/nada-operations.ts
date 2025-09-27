@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { I18nService } from '../../services/i18n.service';
 
 @Component({
   selector: 'app-nada-operations',
@@ -44,7 +45,22 @@ export class NadaOperations {
     }
   ];
 
-constructor(private sanitizer: DomSanitizer) {}
+constructor(private sanitizer: DomSanitizer, public i18n: I18nService) {
+  // الاشتراك في langChanges اختياري إذا أردت تنفيذ كود عند تغيير اللغة
+  this.i18n.langChanges.subscribe(lang => {
+    console.log('Language changed to:', lang);
+    // مثال: إعادة تحميل بيانات المكون إذا احتجت
+  });
+}
+
+// Getter للغة الحالية
+get currentLang(): string {
+  return this.i18n.currentLang;
+}
+
+getTranslation(key: string) {
+  return this.i18n.translate(key);
+}
 
   // Method to get SVG icon based on type
 getIcon(iconType: string): SafeHtml {
