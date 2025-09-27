@@ -1,0 +1,212 @@
+{
+  "nada-navbar": {
+    "brandAlt": "Nada Factory Logo",
+    "links": {
+      "intro": "Intro",
+      "about": "About",
+      "factory": "About the Factory",
+      "products": "Our Products",
+      "tech": "Our Technology",
+      "contact": "Contact Us"
+    }
+  },
+  "nada-hero": {
+    "logoAlt": "Nada Factory Logo"
+  },
+  "nada-about": {
+    "title": "About the Factory",
+    "paragraph": "The factory is located in an industrial strategic area that provides ease of access to raw materials and skilled workers. The factory conforms to the highest standards and participates in securing supply chains and quality assurance."
+  },
+  "nada-products": {
+    "title": "Our Products",
+    "subtitle": "Delivering customized products to meet market needs:",
+    "products": [
+      "Sawdust Products",
+      "Stable Wood Products",
+      "Track Chips Composite",
+      "Fine Palm Fiber",
+      "WPC Wood Boards",
+      "MDF Wood Boards",
+      "High-Energy Animal Feed"
+    ]
+  },
+  "nada-values": {
+    "header": "Our Values",
+    "values": [
+      {
+        "title": "Innovation",
+        "description": "Developing creative solutions\nDesigning production processes"
+      },
+      {
+        "title": "Quality",
+        "description": "High-quality products\nReliable and professional service"
+      },
+      {
+        "title": "Sustainability",
+        "description": "Recycling with responsible methods\nReducing environmental impact"
+      },
+      {
+        "title": "Community",
+        "description": "Team spirit\nSafety and support"
+      },
+      {
+        "title": "Environmental Responsibility",
+        "description": "Implementing green policies and enhancing\nresponsible resource use"
+      }
+    ]
+  },
+  "nada-vision": {
+    "title": "Our Vision",
+    "paragraph": "A vision for sustainable manufacturing with quality outputs from responsible operational practices and continuous improvement to increase availability and efficiency."
+  },
+  "nada-vision2030": {
+    "title": "Our 2030 Vision",
+    "objectives": [
+      {
+        "title": "Comprehensive Livable and Sustainable Community",
+        "description": "Reducing emissions and preserving natural resources"
+      },
+      {
+        "title": "Diversified Economy",
+        "description": "Financial stability and providing sustainable investment opportunities"
+      },
+      {
+        "title": "Robust Industry Path",
+        "description": "Developing suitable solutions for local content and industrial growth"
+      }
+    ]
+  },
+  "nada-why-wood": {
+    "title": "Why Choose Wood?",
+    "features": [
+      {
+        "title": "Specialized Expertise",
+        "subtitle": "Professional manufacturing expertise"
+      },
+      {
+        "title": "Advanced Technology",
+        "subtitle": "Modern and efficient equipment"
+      },
+      {
+        "title": "Material Diversity",
+        "subtitle": "Versatile wood materials"
+      },
+      {
+        "title": "Reliable Solutions",
+        "subtitle": "Robust product guarantees"
+      }
+    ]
+  },
+  "nada-targeted-markets": {
+    "title": "Targeted Markets",
+    "markets": [
+      {
+        "title": "Wood Flooring and Interior Markets",
+        "description": "Specialized sector focused on high-quality wood flooring"
+      },
+      {
+        "title": "Decorative and Construction Markets",
+        "description": "Interior fittings and high-standard finishes"
+      },
+      {
+        "title": "Industrial and Construction Markets",
+        "description": "Strategic industrial solutions for supply security"
+      }
+    ]
+  },
+  "nada-operations": {
+    "title": "Our Operations",
+    "subtitle": "Our Technologies",
+    "description": "We adopt a complete integrated production line that includes:",
+    "operations": [
+      { "title": "Material Collection and Stocking", "subtitle": "From reliable suppliers" },
+      { "title": "Sorting and Shaping", "subtitle": "To ensure product conformity" },
+      { "title": "Processing and Assembly", "subtitle": "Ensuring manufacturing precision" },
+      { "title": "Moisture Control", "subtitle": "Ensuring storage stability" },
+      { "title": "Packaging and Logistics", "subtitle": "Automated packaging solutions" },
+      { "title": "Safe Distribution", "subtitle": "Timely and secure deliveries" }
+    ]
+  },
+  "nada-environmental-impact": {
+    "title": "Environmental and Social Impact",
+    "impacts": [
+      { "title": "Supporting Circular Economy", "description": "Turning byproducts into useful materials and bioenergy" },
+      { "title": "Carbon Footprint Reduction", "description": "Minimizing emissions and supporting low-carbon transport by 2060" },
+      { "title": "Employment and Development", "description": "Creating jobs and stabilizing local craft communities" }
+    ]
+  },
+  "nada-details": {
+    "products": [
+      {
+        "title": "Sawdust Product",
+        "size": "Processing size: 10 kg",
+        "moisture": "Moisture content: 3% - 8%",
+        "benefits": "Benefits: improved bulk density, reduced cracking, enhanced durability."
+      },
+      {
+        "title": "Stable Wood Product",
+        "size": "Processing size: 5 - 10 kg",
+        "moisture": "Moisture content: 5% - 20%",
+        "benefits": "Benefits: suitable for construction, consistent density, easy finishing."
+      },
+      {
+        "title": "Wood Chip Composite",
+        "size": "",
+        "moisture": "Specifications:",
+        "benefits": "Used in composite boards to maintain structural strength and bonding properties."
+      },
+      {
+        "title": "Fine Palm Fiber from Nawatj",
+        "size": "Rough ring size appropriate for nap (varies)",
+        "moisture": "",
+        "benefits": "Usage: improves soil water retention, increases plant aeration and prevents compaction."
+      }
+    ]
+  },
+  "nada-clients": {
+    "title": "Clients",
+    "clients": [
+      { "name": "Nada Center", "subtitle": "Key supplier" },
+      { "name": "Nada Workshop", "subtitle": "Key supplier" },
+      { "name": "Dawgan Company", "subtitle": "Carpentry" },
+      { "name": "Dawgan Company", "subtitle": "Painting" },
+      { "name": "Dawgan Company", "subtitle": "Finishing" }
+    ]
+  },
+  "nada-future-plans": {
+    "title": "Strategic Development Plans",
+    "plans": [
+      "Establishing fiber product lines from agricultural waste",
+      "Sustainable manufacturing programs with partners and investors",
+      "Upgrading production capacity to meet growing demand",
+      "Obtaining FSC and ISO 14001 certifications to enhance environmental and quality management",
+      "Advanced manufacturing technologies"
+    ]
+  },
+  "nada-message": {
+    "title": "Our Message",
+    "description": "We bridge manufacturing and environmental responsibility to deliver safe products and support the 2030 sustainability vision.",
+    "imagesAlt": ["Woodworking craftsmanship", "Wood drilling process"]
+  },
+  "nada-contact-us": {
+    "title": "Contact Us",
+    "subtitle": "We are here to support your inquiries and business requests",
+    "contactInfoTitle": "Contact Information",
+    "formTitle": "Write to Us a Message",
+    "formFields": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "alerts": {
+      "success": "Your message was sent successfully! We will contact you shortly.",
+      "unauthorized": "Error in authorization. Please try again later.",
+      "badRequest": "Incomplete data. Please fill required fields.",
+      "genericError": "An unexpected error occurred while sending. Please try again later."
+    },
+    "loadingText": "Loading message..."
+  }
+}
